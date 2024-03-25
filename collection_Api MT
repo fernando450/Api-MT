@@ -1,0 +1,82 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api MT",
+    "dateExported": "2024-03-25T20:46:49.279Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e0a986b9-1e6b-4083-a2fb-be1d0c849d6f",
+            "colId": "eda11721-ebba-42f5-8388-92021dcd52e1",
+            "containerId": "",
+            "name": "consultar",
+            "url": "http://192.168.1.4:8080/api/users/id",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-25T20:33:49.672Z",
+            "modified": "2024-03-25T20:43:10.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"fernando\",\n  \"apellidos\": \"Almeida Rojas\",\n  \"edad\" : \"21\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "58c9c56b-cf0c-4908-8daa-4afea9ffa854",
+            "colId": "eda11721-ebba-42f5-8388-92021dcd52e1",
+            "containerId": "",
+            "name": "create",
+            "url": "http://192.168.1.4:8080/api/users/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-25T20:34:20.425Z",
+            "modified": "2024-03-25T20:42:45.647Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2dada0a9-3a8e-4740-9b18-600b8619364c",
+            "colId": "eda11721-ebba-42f5-8388-92021dcd52e1",
+            "containerId": "",
+            "name": "edit",
+            "url": "http://192.168.1.4:8080/api/users/edit/1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-25T20:36:36.347Z",
+            "modified": "2024-03-25T20:40:21.894Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63e78100-024a-4526-a8b6-54dd3f95a22c",
+            "colId": "eda11721-ebba-42f5-8388-92021dcd52e1",
+            "containerId": "",
+            "name": "update",
+            "url": "http://192.168.1.4:8080/api/users/update/20",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-03-25T20:43:50.225Z",
+            "modified": "2024-03-25T20:44:28.429Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9bf4a18e-ecc4-4dcd-b79c-a8ca067435c5",
+            "colId": "eda11721-ebba-42f5-8388-92021dcd52e1",
+            "containerId": "",
+            "name": "delete",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-25T20:45:53.173Z",
+            "modified": "2024-03-25T20:45:53.173Z",
+            "headers": []
+        }
+    ]
+}
