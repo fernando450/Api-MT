@@ -29,7 +29,7 @@ const userRoutes = express.Router();
             const usuario = await usuariosPost(nombre,apellidos,edad);
             res.status(201).send(usuario);
         } catch (error) {
-            console.log('Error al crear el usuario');
+            console.error('Error al crear el usuario');
             res.status(500).send('Ocurrio un problema al crear el usuario');
         }
     });
@@ -37,12 +37,11 @@ const userRoutes = express.Router();
     userRoutes.put("/edit/:id" , async(req,res)=>{
         try {
             const {id} = req.params;
-            console.log(id);
             const usuario = await usuariosPut(id);
 
             res.status(200).send(usuario);
         } catch (error) {
-            console.log('Error al editar el usuario');
+            console.error('Error al editar el usuario');
             res.status(500).send('Ocurrio un problema al editar el usuario');
         }
     });
@@ -53,7 +52,7 @@ const userRoutes = express.Router();
             const usuario = await usuariosPatch(id);
             res.status(200).send(usuario);
         } catch (error) {
-            console.log("Error al actualizar el usuario");
+            console.error("Error al actualizar el usuario");
             res.status(500).send('Ocurrio un problema al actualizar el usuario');
         }
     });
@@ -64,9 +63,9 @@ const userRoutes = express.Router();
             const usuario = await usuariosDelete(id);
             res.status(200).send(usuario);
         } catch (error) {
-            console.log('Error al eliminar el usuario');
+            console.error('Error al eliminar el usuario');
             res.status(500).send('Ocurrio un problema al eliminar el usuario');
         }
-    })
+    });
 
 export default userRoutes;
